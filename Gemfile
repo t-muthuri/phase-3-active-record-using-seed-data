@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem 'psych', '< 4'
 # An object-relational mapper
 # https://guides.rubyonrails.org/active_record_basics.html
 gem "activerecord", "~> 6.1"
@@ -22,7 +23,10 @@ gem "require_all"
 
 # Used to generate seed data
 # https://github.com/faker-ruby/faker
+# group development: test do
 gem "faker", "~> 2.18"
+# end
+
 
 # These gems will only be used when we are running the application locally
 group :development do
